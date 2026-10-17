@@ -1,0 +1,93 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #07290c;
+  --color-on-primary: #ffffff;
+  --color-primary-container: #1e3f20;
+  --color-on-primary-container: #86ab83;
+  --color-primary-fixed: #c5edc1;
+  --color-primary-fixed-dim: #aad1a6;
+  --color-on-primary-fixed: #012106;
+  --color-on-primary-fixed-variant: #2d4e2e;
+
+  --color-secondary: #8f4e00;
+  --color-on-secondary: #ffffff;
+  --color-secondary-container: #fea049;
+  --color-on-secondary-container: #6e3a00;
+  --color-secondary-fixed: #ffdcc2;
+  --color-secondary-fixed-dim: #ffb77b;
+  --color-on-secondary-fixed: #2e1500;
+  --color-on-secondary-fixed-variant: #6d3a00;
+
+  --color-tertiary: #451000;
+  --color-on-tertiary: #ffffff;
+  --color-tertiary-container: #691e00;
+  --color-on-tertiary-container: #f97e53;
+  --color-tertiary-fixed: #ffdbcf;
+  --color-tertiary-fixed-dim: #ffb59c;
+  --color-on-tertiary-fixed: #390c00;
+  --color-on-tertiary-fixed-variant: #822801;
+
+  --color-surface: #f7faf6;
+  --color-surface-dim: #d8dbd7;
+  --color-surface-bright: #f7faf6;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #f1f4f1;
+  --color-surface-container: #ecefeb;
+  --color-surface-container-high: #e6e9e5;
+  --color-surface-container-highest: #e0e3e0;
+  --color-surface-variant: #e0e3e0;
+  --color-surface-tint: #446744;
+
+  --color-on-surface: #181c1a;
+  --color-on-surface-variant: #424840;
+  --color-inverse-surface: #2d312f;
+  --color-inverse-on-surface: #eef1ee;
+  --color-inverse-primary: #aad1a6;
+
+  --color-outline: #737970;
+  --color-outline-variant: #c2c8be;
+
+  --font-headline: "Playfair Display", Georgia, serif;
+  --font-body: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-body);
+    color: var(--color-on-surface);
+    background-color: var(--color-surface);
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-headline {
+  font-family: "Playfair Display", Georgia, serif;
+}
+
+.font-body {
+  font-family: "Plus Jakarta Sans", system-ui, sans-serif;
+}
+
+/* Hide scrollbar for clean horizontal scrollers */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

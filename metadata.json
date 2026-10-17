@@ -1,0 +1,6 @@
+{
+  "name": "Qaafirana Vibes - Soulful Kashmir Wandering",
+  "description": "Curated group wanderings, mindful solo retreats, and intimate couple hideaways in Kashmir.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
